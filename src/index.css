@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-primary text-light font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .btn {
+    @apply px-6 py-2 rounded-md transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-secondary text-primary hover:bg-secondary/90 hover:scale-105;
+  }
+
+  .btn-outline {
+    @apply border-2 border-secondary text-secondary hover:bg-secondary/10 hover:scale-105;
+  }
+
+  .chip-skill {
+    @apply rounded-full border border-secondary/30 shadow-sm transition-all duration-200 cursor-pointer bg-opacity-80;
+  }
+
+  .skill-tag {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300;
+  }
+
+  .skill-tag-purple {
+    @apply bg-accent-purple/10 text-accent-purple hover:bg-accent-purple/20;
+  }
+
+  .skill-tag-green {
+    @apply bg-accent-green/10 text-accent-green hover:bg-accent-green/20;
+  }
+
+  .skill-tag-orange {
+    @apply bg-accent-orange/10 text-accent-orange hover:bg-accent-orange/20;
+  }
+
+  .skill-tag-red {
+    @apply bg-accent-red/10 text-accent-red hover:bg-accent-red/20;
+  }
+
+  .skill-tag-blue {
+    @apply bg-secondary/10 text-secondary hover:bg-secondary/20;
+  }
+} 
