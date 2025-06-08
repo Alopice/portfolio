@@ -100,3 +100,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Sabeeh Ashraf - [sabeeh.ashrftv@gmail.com](mailto:sabeeh.ashrftv@gmail.com)
 
 Project Link: [https://sabeehtv-portfolio.vercel.app](https://sabeehtv-portfolio.vercel.app) 
+
+## Credits
+
+Website icon: [alps](https://icons8.com/icon/tsoRAA4cB7Qj/alps) by [Icons8](https://icons8.com)
