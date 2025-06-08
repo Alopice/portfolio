@@ -97,6 +97,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Sabeeh Ashraf - [sabeeh.ashrftv@gmail.com](mailto:your.email@example.com)
+Sabeeh Ashraf - [sabeeh.ashrftv@gmail.com](mailto:sabeeh.ashrftv@gmail.com)
 
 Project Link: [https://sabeehtv-portfolio.vercel.app](https://sabeehtv-portfolio.vercel.app) 
