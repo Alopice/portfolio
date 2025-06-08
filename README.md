@@ -31,7 +31,7 @@ A modern, responsive portfolio website built with React and Tailwind CSS, showca
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/alopice/portfolio.git
    ```
 
 2. Navigate to the project directory:
