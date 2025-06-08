@@ -14,18 +14,22 @@ const Navbar = () => {
     { name: 'Contact', to: 'contact' },
   ];
 
+  const handleMainClick = ()=>{
+    const target = document.getElementById("hero");
+    target.scrollIntoView({behavior:'smooth'});
+  }
+
   return (
     <nav className="fixed w-full bg-primary/90 backdrop-blur-sm z-50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <Link
-            to="hero"
-            className="text-2xl font-bold text-secondary cursor-pointer"
-            smooth={true}
-            duration={500}
+          <button
+            
+            className="text-2xl font-bold text-secondary cursor-pointer border-2 border-secondary p-1"
+            onClick={()=>handleMainClick()}
           >
             SA
-          </Link>
+          </button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
@@ -56,19 +60,23 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <AnimatePresence >
+        <AnimatePresence>
         {isOpen && (
           
-          <motion.div className="md:hidden px-2 pt-2 pb-3 space-y-1 overflow-hidden"
+          <motion.div className="absolute md:hidden w-full px-2 pt-2 pb-3 space-y-1 overflow-hidden origin-top bg-primary/90 backdrop-blur-sm z-50"
           initial={{
-            maxHeight:0
+            opacity:0,
+            scaleY:0
           }}
-          animate={{maxHeight:1000}}
+          animate={{
+            opacity:1,
+            scaleY:1}}
           exit={{
-            maxHeight:0
+           opacity:0,
+            scaleY:0
           }}
           transition={{
-            duration:1
+            duration:0.5
           }}
           >
             

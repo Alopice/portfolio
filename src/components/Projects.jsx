@@ -7,22 +7,22 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce platform built with MERN stack, featuring user authentication, and product management.',
       tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      github: '#',
-      demo: '#'
+      github: 'https://github.com/Alopice/phoneClient',
+      demo: 'https://bookclient.vercel.app/'
     },
 
     {
       title: 'AR Memory Map',
       description: 'A location-based AR app where users drop, view, and revisit memory pins, built with Flutter using map integration and AR overlays for real-world interaction.',
       tech: ['Flutter', 'Dart', 'Firebase', 'Provider'],
-      github: '#',
-      demo: '#'
+      github: 'https://github.com/Alopice/memory_map_deluxe',
+      demo: 'https://github.com/Alopice/memory_map_deluxe/releases'
     },
     {
       title: 'Portfolio Website',
       description: 'A responsive portfolio website showcasing projects and skills, built with React and Tailwind CSS.',
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
-      github: '#',
+      github: 'https://github.com/Alopice/portfolio',
       demo: '#'
     }
   ];

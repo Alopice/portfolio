@@ -1,18 +1,55 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { toast } from 'react-toastify';
+import axios from "axios";
+import { ClipLoader } from 'react-spinners';
 
 const Contact = () => {
+  const server = import.meta.env.VITE_MAILER_SERVER;
+  const reciever = import.meta.env.VITE_RECIEVER;
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+  const [isLoading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Reset form
+    setLoading(true);
+    try{
+      const response = await axios.post(
+        `${server}/send`,
+        {
+          name:formData.name,
+          email:formData.email,
+          reciever:reciever,
+          message:formData.message
+
+        },
+        
+      );
+      setLoading(false);
+      if(response.status == 200){
+        toast.success("message sent successfully",
+          {
+            theme:'colored'
+          }
+        );
+      }
+    }
+    catch(err){
+      return toast.error("error occured",
+        {
+          theme:'colored'
+        }
+      );
+    }
+    
+
+
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -41,6 +78,9 @@ const Contact = () => {
               <p className="text-tertiary mb-6">
                 I'm currently looking for internship opportunities. Whether you have a
                 question or just want to say hi, I'll try my best to get back to you!
+                <br/><br />
+                Kannur, Kerala, India<br/>
+                GMT+5:30 {"(IST)"}
               </p>
               <div className="flex gap-4 mb-8">
                 <a
@@ -69,6 +109,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+            
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-tertiary mb-2">
@@ -116,9 +157,10 @@ const Contact = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="bg-secondary text-primary px-6 py-2 rounded-md font-medium hover:bg-secondary/90 transition-colors"
+                className="bg-secondary text-primary px-6 py-2 rounded-md font-medium hover:bg-secondary/90 transition-colors flex justify-center items-center"
               >
                 Send Message
+                {isLoading && <ClipLoader size={20} className='ml-2'/>}
               </motion.button>
             </form>
           </div>

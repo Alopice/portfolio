@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  const handleClick = () =>{
+    const target = document.getElementById("projects");
+    return target.scrollIntoView({behavior:"smooth"})
+  }
   return (
     <section id="hero" className="min-h-screen flex justify-center items-center section-padding">
      
@@ -13,7 +17,7 @@ const Hero = () => {
         >
           <p className="text-secondary mb-4">Hi, my name is</p>
           <h1 className="text-4xl md:text-6xl font-bold text-light mb-4">
-            Sabeeh Ashraf.
+            Sabeeh Ashraf T V.
           </h1>
           <h2 className="text-3xl md:text-5xl font-bold text-tertiary mb-6">
             MERN Stack & Flutter Developer
@@ -25,6 +29,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="border-2 border-secondary text-secondary px-8 py-3 rounded-md hover:bg-secondary/10 transition-colors"
+            onClick={()=>handleClick()}
           >
             View My Work
           </motion.button>

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 
+
 const About = () => {
   return (
     <section id="about" className="min-h-screen flex items-center section-padding">
@@ -32,12 +33,13 @@ const About = () => {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-lg bg-secondary/10 border border-secondary/20">
+              
                 <img 
+                className=' border-0 rounded-xl md:w-2/3 w-1/2 md:absolute md:right-20'
+                src="/sabeeh_pfp.JPG" alt="" />
                 
-                src="/mypfp.jpeg" alt="" />
                 
-              </div>
+              
             </div>
           </div>
         </motion.div>

@@ -11,7 +11,8 @@ const Skills = () => {
         { name: 'MongoDB', color: 'accent-green' },
         { name: 'JavaScript', color: 'accent-orange' },
         { name: 'HTML', color: 'accent-red' },
-        { name: 'CSS', color: 'accent-purple' }
+        { name: 'CSS', color: 'accent-purple' },
+        { name: 'SQL', color: 'accent-green' }
       ]
     },
     {
@@ -29,7 +30,8 @@ const Skills = () => {
         { name: 'GitHub', color: 'accent-purple' },
         { name: 'VS Code', color: 'accent-blue' },
         { name: 'Postman', color: 'accent-orange' },
-        { name: 'Figma', color: 'accent-purple' }
+        { name: 'Vercel', color: 'accent-purple' },
+        { name: 'Render', color: 'accent-red' }
       ]
     }
   ];
