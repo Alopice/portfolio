@@ -16,7 +16,7 @@ const Hero = () => {
           className='flex flex-col justify-start items-start'
         >
           <p className="text-secondary mb-4">Hi, my name is</p>
-          <h1 className="text-4xl md:text-6xl font-bold text-light mb-4">
+          <h1 className="text-3xl md:text-6xl font-bold text-light mb-4">
             Sabeeh Ashraf T V.
           </h1>
           <h2 className="text-3xl md:text-5xl font-bold text-tertiary mb-6">

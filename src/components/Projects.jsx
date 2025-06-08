@@ -6,14 +6,14 @@ const Projects = () => {
     {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce platform built with MERN stack, featuring user authentication, and product management.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express'],
+      tech: ['React', 'Node.js', 'MySQL', 'Express'],
       github: 'https://github.com/Alopice/phoneClient',
       demo: 'https://bookclient.vercel.app/'
     },
 
     {
       title: 'AR Memory Map',
-      description: 'A location-based AR app where users drop, view, and revisit memory pins, built with Flutter using map integration and AR overlays for real-world interaction.',
+      description: 'A location-based AR app where users drop, view, and revisit memory pins, built with Flutter.',
       tech: ['Flutter', 'Dart', 'Firebase', 'Provider'],
       github: 'https://github.com/Alopice/memory_map_deluxe',
       demo: 'https://github.com/Alopice/memory_map_deluxe/releases'
@@ -65,24 +65,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-tertiary hover:text-secondary transition-colors"
-                  >
-                    <FaGithub className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-tertiary hover:text-secondary transition-colors"
-                  >
-                    <FaExternalLinkAlt className="w-5 h-5" />
-                  </a>
-                </div>
+                
               </motion.div>
             ))}
           </div>

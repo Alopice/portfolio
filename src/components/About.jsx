@@ -10,12 +10,15 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
+          className='relative'
         >
-          <h2 className="text-3xl font-bold text-light mb-8">
+          <div className="grid md:grid-cols-2 gap-8">
+          
+          
+            <div className="space-y-4">
+            <h2 className="text-3xl font-bold text-light mb-8">
             About Me
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4">
               <p className="text-tertiary">
                 I am a recent graduate with a Bachelor of Computer Applications (BCA) degree,
                 passionate about web and mobile app development. My journey in technology
@@ -35,7 +38,7 @@ const About = () => {
             <div className="relative">
               
                 <img 
-                className=' border-0 rounded-xl md:w-2/3 w-1/2 md:absolute md:right-20'
+                className=' border-0 rounded-xl  w-1/2 md:absolute md:right-20'
                 src="/sabeeh_pfp.JPG" alt="" />
                 
                 
