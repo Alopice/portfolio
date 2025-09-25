@@ -24,6 +24,13 @@ const Projects = () => {
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/Alopice/portfolio',
       demo: '#'
+    },
+    {
+      title: 'StoreFlow',
+      description: "A full-stack MERN ERP for mini store management, featuring inventory CRUD, POS checkout, employee management, analytics dashboard, and secure authentication.",
+      tech: ['React', 'Node.js', 'MongoDB', 'Express', 'SendGrid', 'tailwindCSS'],
+      github: '',
+      demo: ''
     }
   ];
 
